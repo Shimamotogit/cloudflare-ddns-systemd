@@ -1,0 +1,4 @@
+# Never commit local secrets.
+token
+*.token
+.env
