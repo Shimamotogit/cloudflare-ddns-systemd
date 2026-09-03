@@ -1,0 +1,17 @@
+# Required. Copy IDs exactly from Cloudflare.
+ZONE_ID=REPLACE_WITH_ZONE_ID
+RECORD_ID=REPLACE_WITH_RECORD_ID
+RECORD_NAME=home.example.com
+
+# Verify the real Cloudflare record once per day.
+# Set 0 to disable periodic reconciliation.
+RECONCILE_INTERVAL_SECONDS=86400
+
+# Local fail-safe: never begin a new Cloudflare API session sooner than this.
+API_MIN_INTERVAL_SECONDS=60
+
+CONNECT_TIMEOUT_SECONDS=5
+REQUEST_TIMEOUT_SECONDS=15
+
+# Bounded retries only: 0..3.
+RETRY_COUNT=2
